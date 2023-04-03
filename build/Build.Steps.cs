@@ -493,7 +493,7 @@ partial class Build
                             // To allow roll forward for applications, like Roslyn, that target one tfm
                             // but have a later runtime move the libraries under the original tfm folder
                             // to the latest one.
-                            depsJsonContent = RollFrameworkForward(TargetFramework.NET6_0, TargetFramework.NET7_0, architectureStores, depsJsonContent);
+//vk                            depsJsonContent = RollFrameworkForward(TargetFramework.NET6_0, TargetFramework.NET7_0, architectureStores, depsJsonContent);
                         }
 
                         // Write the updated deps.json file.
@@ -596,7 +596,7 @@ partial class Build
             var folderRuntimeName = runtimeName switch
             {
                 ".NETCoreApp,Version=v6.0" => "net6.0",
-                ".NETCoreApp,Version=v7.0" => "net7.0",
+                ".NETCoreApp,Version=v7.0" => "net6.0",
                 _ => throw new ArgumentOutOfRangeException(nameof(runtimeName), runtimeName,
                     "This value is not supported. You have probably introduced new .NET version to AutoInstrumentation")
             };

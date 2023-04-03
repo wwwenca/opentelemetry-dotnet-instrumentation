@@ -60,7 +60,7 @@ if [ -z "$(ls -A $OTEL_DOTNET_AUTO_HOME)" ]; then
 fi
 # get absulute path
 if [ "$OS_TYPE" == "macos" ]; then
-  OTEL_DOTNET_AUTO_HOME=$(greadlink -fn $OTEL_DOTNET_AUTO_HOME)
+  OTEL_DOTNET_AUTO_HOME=$( cd "$OTEL_DOTNET_AUTO_HOME" && pwd -P )
 else
   OTEL_DOTNET_AUTO_HOME=$(readlink -fn $OTEL_DOTNET_AUTO_HOME)
 fi

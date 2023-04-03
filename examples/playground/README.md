@@ -25,6 +25,6 @@ and run the playground application with auto instrumentation.
 | Env var         | Description                                               | Default  |
 |-----------------|-----------------------------------------------------------|----------|
 | `CONFIGURATION` | Build configuration. Possible values: `Debug`, `Release`. | `Debug`  |
-| `DOTNET`        | .NET version. Possible values: `net7.0`, `net6.0`.        | `net7.0` |
+| `DOTNET`        | .NET version. Possible values: `net6.0`, `net6.0`.        | `net6.0` |
 
 The application should be hosted on <http://localhost:5000/`>.

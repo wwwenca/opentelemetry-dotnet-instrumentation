@@ -51,7 +51,7 @@ This beta release is built on top of [OpenTelemetry .NET](https://github.com/ope
 - Replace `OTEL_DOTNET_AUTO_LEGACY_SOURCES` with `OTEL_DOTNET_AUTO_TRACES_ADDITIONAL_LEGACY_SOURCES`.
 - Updated the shared store to correctly support
   [framework roll-forward](https://learn.microsoft.com/en-us/dotnet/core/versions/selection#framework-dependent-apps-roll-forward)
-  from `net6.0` to `net7.0`.
+  from `net6.0` to `net6.0`.
 
 ### Removed
 

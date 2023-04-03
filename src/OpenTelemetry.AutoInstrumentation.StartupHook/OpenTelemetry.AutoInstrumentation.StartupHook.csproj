@@ -7,6 +7,12 @@
     <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\OpenTelemetry.AutoInstrumentation\Constants.cs" Link="Constants.cs" />
     <Compile Include="..\OpenTelemetry.AutoInstrumentation\Logging\CustomLogger.cs">
